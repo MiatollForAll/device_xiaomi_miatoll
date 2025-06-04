@@ -81,23 +81,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service
 
-# Dolby
-TARGET_USES_DOLBY := true
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh
-
-PRODUCT_PACKAGES += \
-    XiaomiDolby \
-    XiaomiDolbyResCommon
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
-
-# DSPVolumeSynchronizer
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
 
 # Fastbootd
 PRODUCT_PACKAGES += \
