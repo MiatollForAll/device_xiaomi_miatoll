@@ -158,6 +158,9 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+#MiuiCamera 
+-include vendor/xiaomi/miuicamera-miatoll/BoardConfigMiuiCamera.mk
+
 # Updater
 AB_OTA_UPDATER := false
 
